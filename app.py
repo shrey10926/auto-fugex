@@ -208,6 +208,7 @@ def validate_regex(regex_pattern):
     except re.error as e:
         return False, str(e)
 
+
 def validate_fuzzy_expression(expression):
 
     """

@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: streamlit-service
+spec:
+  type: NodePort  # This exposes the service on a port on the minikube host
+  selector:
+    app: streamlit
+  ports:
+    - protocol: TCP
+      port: 6996       # Port inside the cluster
+      targetPort: 6996 # Port your container listens on
+      nodePort: 31111  # The port on the Minikube node (you can choose an available port)
