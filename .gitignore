@@ -1,7 +1,6 @@
 __pycache__/
 autochef/
 *.dockerignore
-*.txt
 *.log
 build/
 dist/
