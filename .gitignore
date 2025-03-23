@@ -1,0 +1,10 @@
+__pycache__/
+autochef/
+*.dockerignore
+*.txt
+*.log
+build/
+dist/
+*.manifest
+*.spec
+.ipynb_checkpoints
